@@ -38,7 +38,11 @@ def process_pdf(pdf_content):
 def ask_pdf_question():
     if request.method == 'POST':
         user_question = request.json.get('question')
-        pdf_docs = "/Users/ankitupatil1/Downloads/Chatbot-main/corporate bank.pdf"
+
+        
+        pdf_docs = """ADD your pdf file path"""
+
+        
         if user_question:
             pdf_contents = pdf_content(pdf_docs)
 
